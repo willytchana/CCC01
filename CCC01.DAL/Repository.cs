@@ -12,7 +12,7 @@ namespace CCC01.DAL
     public class Repository<T>
     {
         private static List<T> data;
-        private readonly string FILE_NAME = $"{typeof(T).GetType()}.json";
+        private readonly string FILE_NAME = $"{typeof(T).Name}.json";
         private readonly string dbFolder;
         private FileInfo file;
         public Repository(string dbFolder)
