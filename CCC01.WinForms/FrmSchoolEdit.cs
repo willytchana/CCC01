@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CCC01.WinForms
 {
-    public partial class Form1 : Form
+    public partial class FrmSchoolEdit : Form
     {
-        public Form1()
+        public FrmSchoolEdit()
         {
             InitializeComponent();
         }
