@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace CCC01.WinForms
 {
-    public partial class FrmSchoolEdit : Form
+    public partial class FrmStudentEdit : Form
     {
-        public FrmSchoolEdit()
+        public FrmStudentEdit()
         {
             InitializeComponent();
         }
-
     }
 }
