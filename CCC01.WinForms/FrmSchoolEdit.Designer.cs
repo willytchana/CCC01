@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtContact = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lblErrorEmail = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(276, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(179, 205);
@@ -129,6 +131,18 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // lblErrorEmail
+            // 
+            this.lblErrorEmail.AutoSize = true;
+            this.lblErrorEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorEmail.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorEmail.Location = new System.Drawing.Point(12, 78);
+            this.lblErrorEmail.Name = "lblErrorEmail";
+            this.lblErrorEmail.Size = new System.Drawing.Size(64, 13);
+            this.lblErrorEmail.TabIndex = 9;
+            this.lblErrorEmail.Text = "lblEmailError";
+            this.lblErrorEmail.Visible = false;
+            // 
             // FrmSchoolEdit
             // 
             this.AcceptButton = this.btnSave;
@@ -136,6 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(467, 335);
+            this.Controls.Add(this.lblErrorEmail);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtContact);
@@ -171,6 +186,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblErrorEmail;
     }
 }
 
