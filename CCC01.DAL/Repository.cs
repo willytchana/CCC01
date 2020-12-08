@@ -42,6 +42,11 @@ namespace CCC01.DAL
             }
         }
 
+        public T Get(Func<T, bool> predicate)
+        {
+            return data.FirstOrDefault(predicate);
+        }
+
         public void Set(T oldT, T newT)
         {
             var oldIndex = data.IndexOf(oldT);
